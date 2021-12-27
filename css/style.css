@@ -88,7 +88,7 @@ header .hamburger{
     width:25px;
     height:25px;
     position:absolute;
-    right: 40px;
+    right: 30px;
     top:11px;
     display: none;
 }
@@ -112,8 +112,7 @@ section.intro .motto{
     text-align: center;
     background-image: url(../images/cooldog.png);
     background-position: 40% 40%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
 }
 section.intro .motto h2{
     transition: 0.5s;
@@ -126,6 +125,8 @@ section.intro .motto h2{
     background-image: url(../images/강아지\ 옆에\ 꽃.png);
     background-repeat: no-repeat;
     background-position: 60% 65%;
+    animation-name: fadeIn;
+    animation-duration: 4s; 
 }
 
 section.intro .motto span{
@@ -149,6 +150,7 @@ section.intro .motto span{
     }
     header h1{
         text-align: center;
+        margin-left: 20px;
     }
     header nav ul {
         margin-top:13px;
@@ -181,11 +183,20 @@ section.intro .motto span{
     }
 
     section.intro .motto{
-        background-position: 50% 20%;
+        background-position: 50% 35%;
     }
 
     section.intro .motto h2{
-        padding-top: 26%;
+        padding-top: 32%;
         margin-left: 0px;
     }
+}
+
+
+@keyframes fadeIn{
+    0% { opacity: 0;} 25%{opacity: 1;}
+    50%{opacity: 0.7;
+    }
+    75%{ opacity:1;}
+    100%{ opacity: 1;}
 }
