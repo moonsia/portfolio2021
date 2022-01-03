@@ -8,18 +8,4 @@ console.log(runLeft);
 hamburgerBtn.addEventListener("click",function(){
     subMenu.classList.toggle("active");
     snsIcon.classList.toggle("active");
-})
-
-console.dir(runLeft);
-runLeft.addEventListener("mouseover", function(){
-    stopRun();
-    
-})
-
-function stopRun(){
-    clearInterval();
-}
-
-function textRun(){
-    runLeft
-}
+});

@@ -25,13 +25,13 @@ html,body{
 .greeting{
     width:100%;
     height: 30px;
-    padding:5px;
     text-align: center;
     background-color: #f4f4f4;
     line-height: 1.7;
     display: block;
 }
 .greeting h3{
+    display: block;
     font-weight: 900;
     color:#666;
 }
@@ -200,11 +200,15 @@ svg text{
 }
 #about_Me .me div div img{
     width:100%;
+    transform: scaleX(-1);
 }
 #about_Me .me div p{
     margin-top: 30px;
+    font-size: 14px;
 }
 
+
+/*skill*/
 #skill {
     width:100%;
     background-image: url(../images/skill_bg.png);
@@ -236,10 +240,11 @@ h2.title::before{
     margin-bottom: 10px;
 }
 h2.title{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 600;
     color: #333;
 }
+/****/
 .skill_about{
     width:100%;
     display: flex;
@@ -274,22 +279,75 @@ h2.title{
 }
 
 
+/*portfolio*/
+#portfolio{
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 100vh;
+}
+/*contect*/
+#contect_Me{
+    background-color: #fff;
+    width:100%;
+}
+.contect_wrap{
+    width:56.25%;
+    margin: 40px auto 0px;
+}
+.contect_wrap .con{
+    width:100%;
+    padding-top: 40px;
+}
+.contect_wrap .con h2{
+    text-align: end;
+    position: relative;
+}
+.contect_wrap .con h2.title::before{
+    position: absolute;
+    right:2px; /*오른쪽으로 부터 30px 띄워줌.*/
+    top: -12px; 
+}
+.contect_wrap .con p{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: end;
+    font-weight: 600;
+}
+.contect_wrap .con2{
+    width:100%;
+    display: flex;
+}
+.contect_wrap .con2 .email{
+    background: pink;
+    height: 100px;
+}
+.email span{
+    width:183px;
+}
+.contect_wrap .con2 .openkakao{
+    width:30%;
+    background: #fff;
+    height: 100px;
+}
+/*footer*/
 footer{
     background-color: #333;
     width:100%;
     padding: 40px 0px 40px;
 }
 footer h5{
-    
     text-align: center;
     color: #f4f4f4;
+    font-size: 14px;
+
 }
 footer p{
     color:#f4f4f4;
     text-align: center;
+    font-size: 14px;
 }
 
-/**/
+/* 반응형 */
 @media screen and (max-width: 1250px){
     section#intro .motto h2{
         background-image: none;
@@ -376,6 +434,25 @@ footer p{
     .skill_set{
         width:50%;
     }
+
+
+
+    /*contect*/
+    .contect_wrap{
+        width:100%;
+        margin-right: 30px;
+    }
+
+    .contect_wrap .con h2{
+        margin-left: 0px;
+        padding-right: 30px; /*오른쪽으로 부터 30px 띄워줌.*/
+    }
+    .contect_wrap .con h2.title::before{
+        right: 32px;/*오른쪽으로 부터 30px 띄워줌.*/
+    }
+    .contect_wrap .con p{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 390px){
     #about_Me svg{
@@ -386,6 +463,7 @@ footer p{
     }
 }
 
+/* 애니메이션 */
 @keyframes fadeIn{
     0% { opacity: 0;} 
     25%{opacity: 1;}
