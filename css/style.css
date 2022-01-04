@@ -37,6 +37,8 @@ html,body{
 }
 
 header{
+    position: sticky;
+    top:0px;
     width:100%;
     display: flex;
     justify-content: center;
@@ -212,7 +214,6 @@ svg text{
 #skill {
     width:100%;
     background-image: url(../images/skill_bg.png);
-    
 }
 #skill>div{
     width:56.25%;
@@ -281,7 +282,7 @@ h2.title{
 
 /*portfolio*/
 #portfolio{
-    background-color: #d3d3d3;
+    background-color: #333;
     width: 100%;
     height: 100vh;
 }
@@ -435,8 +436,6 @@ footer p{
         width:50%;
     }
 
-
-
     /*contect*/
     .contect_wrap{
         width:100%;
@@ -452,6 +451,9 @@ footer p{
     }
     .contect_wrap .con p{
         text-align: center;
+    }
+    .contect_wrap .con2 .email{
+        margin-left:30px;
     }
 }
 @media screen and (max-width: 390px){
