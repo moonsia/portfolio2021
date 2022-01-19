@@ -18,4 +18,3 @@ hamburgerBtn.addEventListener("click",function(){
     snsIcon.classList.toggle("active");
     
 });
-

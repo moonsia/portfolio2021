@@ -296,7 +296,7 @@ h2.title{
 /*portfolio*/
 #portfolio{
     width: 100%;
-    height: 100vh;
+
 }
 #portfolio .title_wrap{
     width:56.25%;
@@ -333,19 +333,16 @@ h2.title{
     font-size: 14px;
     font-weight: 600;
 }
-.unid a{
+.samick a{
     display: inline-block;
     padding: 8px 12px;
     border-radius: 2px;
     background-color: #f4f4f4;
     color:#666;
     font-weight: 600;
-    position:absolute;
-    top:150px;
-    left:50%;
-    transform: translateX(-50%);
+    margin:10px 0px 0px 20px;
 }
-.unid a:hover{
+.samickProject a:hover{
     background-color: var(--color-light);
     color: #fff;
 }
@@ -370,6 +367,58 @@ h2.title{
 .unid_i .ofw img{
     width:100%;
     height: 600px;
+}
+#portfolio .port_wrap .samickProject{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.samick{
+    width:350px;
+    height: 205px; 
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(50, 50, 93, 0.11);
+    margin: 40px 0px 0px 0px;
+}
+.samick h4{
+    color:var(--color-light);
+    font-weight: normal;
+    margin: 20px 0px 20px 20px;
+}
+.samick p{
+    color:#666;
+    font-size: 600;
+    line-height: 1.5;
+    margin-left:20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.samick_i{
+    width:350px;
+    height: 350px;
+} 
+.samick_i img{
+    width:350px;
+    height: 350px;
+}
+
+.fp{
+    width:100%;
+    margin:0px auto;
+    overflow: scroll;
+    display: flex;
+}
+.fp div{
+    width:33%;
+    height: 400px;
+    font-size: 21px;
+    text-align: center;
+}
+.fp div img{
+    width:100%;
+}
+.fp div:hover{
+    opacity: 100%;
 }
 /*contect*/
 #contect_Me{
@@ -468,6 +517,23 @@ footer p{
 @media screen and (max-width: 700px){
     .unidProject .unid{
         margin-bottom:20px;
+    }
+    .fp{
+        width:85%;
+        display: block;
+    }
+
+    .fp>div{
+        width:100%;
+        height: 300px;
+        margin-bottom: 40px;
+        overflow: scroll;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+    }
+    .samick_i{
+        margin-top:20px;
+        margin-bottom: 40px;
     }
 }
 @media screen and (max-width: 960px){
@@ -576,6 +642,9 @@ footer p{
     #portfolio .title_wrap{
         margin:0px;
     }
+    .ft{
+        display: block;
+    }
 }
 @media screen and (max-width: 390px){
     #about_Me svg{
@@ -590,6 +659,12 @@ footer p{
     .unid_i .ofw{
         width:100%;
         left:0px;
+    }
+    .samick_i{
+        width:100%;
+    }
+    .samick_i img{
+        width:100%;
     }
 }
 
