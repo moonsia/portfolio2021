@@ -231,7 +231,7 @@ svg text{
     width:56.25%;
     margin: 80px auto 0px;
     padding-top: 40px;
-    height:100vh;
+    height:640px;
 }
 #skill>div h2{
     color:#fff;
@@ -602,7 +602,9 @@ footer p{
     #about_Me .me div p{
         margin-left:30px;
     }
-
+    #skill>div{
+        height: 880px;
+    }
     #skill{
         width:100%;
         background-size: cover;
@@ -652,6 +654,9 @@ footer p{
     }    
     section#intro .motto h2{
         padding-top:32%;
+    }
+    #skill>div{
+        height: 100vh;
     }
     .unid_i{
         width:100%;
